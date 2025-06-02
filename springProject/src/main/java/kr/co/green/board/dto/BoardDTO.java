@@ -1,5 +1,25 @@
 package kr.co.green.board.dto;
 
-public class BoardDTO {
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Setter
+@Getter
+@NoArgsConstructor
+public class BoardDTO {
+	private int fbId;
+	private String title;
+	private String content;
+	private String author;
+	private String createdDate;
+	private String modefiedDate;
+	private int viewCount;
+	private String status;
 }
+
+
+
+
+
+
