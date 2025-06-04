@@ -18,7 +18,19 @@
 					   view_count,
 					   ROW_NUMBER() OVER (ORDER BY created_date DESC) AS rn
 				FROM free_board
-				WHERE status = 'Y')
+				WHERE status = 'Y'
+				<choose>
+					<when test="searchDTO.category.equals('title')">
+						AND title LIKE '%' || #{searchDTO.text} || '%'
+					</when>
+					<when test="searchDTO.category.equals('content')">
+						AND content LIKE '%' || #{searchDTO.text} || '%'
+					</when>
+					<when test="searchDTO.category.equals('author')">
+						AND author LIKE '%' || #{searchDTO.text} || '%'
+					</when>
+				</choose>
+				)
 		WHERE rn BETWEEN #{pi.offset} AND #{pi.limit}
 	</select>
 	
@@ -38,7 +50,51 @@
 			</when>
 		</choose>
 	</select>
+	
+	<insert id="create">
+		INSERT INTO free_board
+		VALUES(free_board_seq.nextval,
+			   #{boardDTO.title},
+			   #{boardDTO.content},
+			   #{boardDTO.author},
+			   default,
+			   null,
+			   default,
+			   'Y')
+	</insert>
+	
+	<select id="detail" resultMap="boardResultMap">
+		SELECT fb_id, title, content, author, created_date, view_count
+		FROM free_board
+		WHERE fb_id = #{fbId}
+		AND status = 'Y'
+	</select>
+	
+	<update id="incrementViewCount">
+		UPDATE free_board
+		SET view_count = view_count+1
+		WHERE fb_id = #{fbId}
+		AND status = 'Y'
+	</update>
+	
+	<update id="delete">
+		UPDATE free_board
+		SET status = 'N'
+		WHERE fb_id = #{fbId}
+	</update>
+	
+	<update id="edit">
+		UPDATE free_board
+		SET title = #{boardDTO.title},
+			content = #{boardDTO.content},
+			modified_date = SYSDATE
+		WHERE fb_id = #{boardDTO.fbId}
+	</update>
 </mapper>
+
+
+
+
 
 
 
