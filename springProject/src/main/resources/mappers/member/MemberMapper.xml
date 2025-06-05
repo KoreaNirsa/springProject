@@ -24,7 +24,6 @@
 	<select id="login" resultMap="loginResultMap">
 		SELECT * FROM member
 		WHERE id = #{id}
-		AND password = #{password}
 	</select>
 </mapper>
 

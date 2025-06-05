@@ -2,11 +2,13 @@ package kr.co.green.member.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import jakarta.servlet.http.HttpSession;
+import jakarta.validation.Valid;
 import kr.co.green.member.dto.MemberDTO;
 import kr.co.green.member.service.impl.MemberServiceImpl;
 import lombok.RequiredArgsConstructor;
@@ -28,7 +30,12 @@ public class MemberController {
 	}
 	
 	@PostMapping("/register")
-	public String register(MemberDTO memberDTO) {
+	public String register(@Valid MemberDTO memberDTO, BindingResult bindingResult, Model model) {
+		if(bindingResult.hasErrors()) {
+			model.addAttribute("bindingResult", bindingResult); // 생략 가능
+			return "member/register";
+		}
+		
 		int result = memberService.register(memberDTO);
 		return "redirect:/member/login/form";
 	}
@@ -57,7 +64,6 @@ public class MemberController {
 		
 		return "redirect:/member/login/form";
 	}
-	
 	
 	// 1. 사용자 요청 (/member/login) -> 서버
 	// 2. 서버는 URL이 매핑되는 컨트롤러가 있는지 확인하고 있다면 컨트롤러로 감
