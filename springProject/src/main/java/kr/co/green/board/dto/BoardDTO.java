@@ -16,6 +16,8 @@ public class BoardDTO {
 	private String modefiedDate;
 	private int viewCount;
 	private String status;
+	
+	private FileDTO fileDTO = new FileDTO();
 }
 
 

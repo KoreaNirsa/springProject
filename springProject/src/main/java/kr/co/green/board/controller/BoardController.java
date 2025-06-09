@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kr.co.green.board.dto.BoardDTO;
@@ -57,8 +58,9 @@ public class BoardController {
 	
 	@PostMapping("/create")
 	public String create(BoardDTO boardDTO,
+						 @RequestParam("file") MultipartFile file,
 						 @SessionAttribute("id") String sessionId) {
-		int result = boardService.create(boardDTO, sessionId);
+		int result = boardService.create(boardDTO, file, sessionId);
 		
 		return "redirect:/board/list";
 	}
