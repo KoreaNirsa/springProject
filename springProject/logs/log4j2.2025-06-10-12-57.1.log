@@ -1,0 +1,39 @@
+[2025-06-10 12:57:43.912]  INFO 21452 --- [on(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[2025-06-10 12:57:43.917]  INFO 21452 --- [on(9)-127.0.0.1] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+[2025-06-10 12:57:43.919]  INFO 21452 --- [tomcat-shutdown] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:57:43.956]  INFO 21452 --- [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+[2025-06-10 12:57:43.957]  INFO 21452 --- [on(9)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:57:46.441]  INFO ${sys:PID} --- [           main] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 시작중입니다.
+[2025-06-10 12:57:46.548]  INFO ${sys:PID} --- [  restartedMain] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 시작중입니다.
+[2025-06-10 12:57:46.790]  INFO 5564 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 8.0.2.Final
+[2025-06-10 12:57:46.827]  INFO 5564 --- [  restartedMain] k.c.g.SpringProjectApplication           : Starting SpringProjectApplication using Java 17.0.12 with PID 5564 (C:\dev\git-workspace\springProject\bin\main started by GR in C:\dev\git-workspace\springProject)
+[2025-06-10 12:57:46.830]  INFO 5564 --- [  restartedMain] k.c.g.SpringProjectApplication           : No active profile set, falling back to 1 default profile: "default"
+[2025-06-10 12:57:46.865]  INFO 5564 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in C:\Users\GR\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\23.7.0.25.01\665f52abef9122ce003b5cfc1d9d44f7302e2cfe\ojdbc11-23.7.0.25.01.jar referenced one or more files that do not exist: file:/C:/Users/GR/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/23.7.0.25.01/665f52abef9122ce003b5cfc1d9d44f7302e2cfe/oraclepki.jar
+[2025-06-10 12:57:46.866]  INFO 5564 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2025-06-10 12:57:46.867]  INFO 5564 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2025-06-10 12:57:47.981]  INFO 5564 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 80 (http)
+[2025-06-10 12:57:47.993]  INFO 5564 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:57:47.995]  INFO 5564 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[2025-06-10 12:57:47.995]  INFO 5564 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.39]
+[2025-06-10 12:57:48.040]  INFO 5564 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[2025-06-10 12:57:48.040]  INFO 5564 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1173 ms
+[2025-06-10 12:57:48.424]  WARN 5564 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 53c0c43e-9540-410f-9bdb-854759476b7f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-06-10 12:57:48.429]  INFO 5564 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-06-10 12:57:48.862]  INFO 5564 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+[2025-06-10 12:57:48.881]  INFO 5564 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:57:48.897]  INFO 5564 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 80 (http) with context path '/'
+[2025-06-10 12:57:48.907]  INFO 5564 --- [  restartedMain] k.c.g.SpringProjectApplication           : Started SpringProjectApplication in 2.355 seconds (process running for 3.185)
+[2025-06-10 12:57:48.910]  INFO 5564 --- [  restartedMain] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 성공적으로 시작되었습니다.
+[2025-06-10 12:57:59.641]  INFO 5564 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2025-06-10 12:57:59.647]  INFO 5564 --- [       Thread-5] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+[2025-06-10 12:57:59.649]  INFO 5564 --- [tomcat-shutdown] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:57:59.706]  INFO 5564 --- [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+[2025-06-10 12:57:59.706]  INFO 5564 --- [       Thread-5] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:57:59.745]  INFO 5564 --- [  restartedMain] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 시작중입니다.
+[2025-06-10 12:57:59.785]  INFO 5564 --- [  restartedMain] k.c.g.SpringProjectApplication           : Starting SpringProjectApplication using Java 17.0.12 with PID 5564 (C:\dev\git-workspace\springProject\bin\main started by GR in C:\dev\git-workspace\springProject)
+[2025-06-10 12:57:59.786]  INFO 5564 --- [  restartedMain] k.c.g.SpringProjectApplication           : No active profile set, falling back to 1 default profile: "default"

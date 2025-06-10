@@ -1,0 +1,27 @@
+[2025-06-10 12:40:12.028]  INFO 15972 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 26 class path changes (0 additions, 0 deletions, 26 modifications)
+[2025-06-10 12:40:12.090]  INFO 15972 --- [       Thread-9] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+[2025-06-10 12:40:12.095]  INFO 15972 --- [tomcat-shutdown] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:40:12.350]  INFO 15972 --- [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+[2025-06-10 12:40:12.354]  INFO 15972 --- [       Thread-9] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:40:12.424]  INFO 15972 --- [  restartedMain] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 시작중입니다.
+[2025-06-10 12:40:12.477]  INFO 15972 --- [  restartedMain] k.c.g.SpringProjectApplication           : Starting SpringProjectApplication using Java 17.0.12 with PID 15972 (C:\dev\git-workspace\springProject\bin\main started by GR in C:\dev\git-workspace\springProject)
+[2025-06-10 12:40:12.478]  INFO 15972 --- [  restartedMain] k.c.g.SpringProjectApplication           : No active profile set, falling back to 1 default profile: "default"
+[2025-06-10 12:40:12.764]  INFO 15972 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 80 (http)
+[2025-06-10 12:40:12.765]  INFO 15972 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:40:12.765]  INFO 15972 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[2025-06-10 12:40:12.765]  INFO 15972 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.39]
+[2025-06-10 12:40:12.778]  INFO 15972 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[2025-06-10 12:40:12.778]  INFO 15972 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 299 ms
+[2025-06-10 12:40:12.873]  WARN 15972 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: aa728f1b-04af-4b73-8061-d809c979cb90
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-06-10 12:40:12.874]  INFO 15972 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-06-10 12:40:13.083]  INFO 15972 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+[2025-06-10 12:40:13.092]  INFO 15972 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:40:13.095]  INFO 15972 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 80 (http) with context path '/'
+[2025-06-10 12:40:13.111]  INFO 15972 --- [  restartedMain] k.c.g.SpringProjectApplication           : Started SpringProjectApplication in 0.683 seconds (process running for 452.708)
+[2025-06-10 12:40:13.113]  INFO 15972 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+[2025-06-10 12:40:13.113]  INFO 15972 --- [  restartedMain] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 성공적으로 시작되었습니다.

@@ -1,0 +1,167 @@
+[2025-06-10 12:49:01.186]  INFO 21776 --- [  restartedMain] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 시작중입니다.
+[2025-06-10 12:49:01.257]  INFO 21776 --- [  restartedMain] k.c.g.SpringProjectApplication           : Starting SpringProjectApplication using Java 17.0.12 with PID 21776 (C:\dev\git-workspace\springProject\bin\main started by GR in C:\dev\git-workspace\springProject)
+[2025-06-10 12:49:01.258]  INFO 21776 --- [  restartedMain] k.c.g.SpringProjectApplication           : No active profile set, falling back to 1 default profile: "default"
+[2025-06-10 12:49:01.459]  INFO 21776 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 80 (http)
+[2025-06-10 12:49:01.460]  INFO 21776 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:49:01.460]  INFO 21776 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[2025-06-10 12:49:01.460]  INFO 21776 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.39]
+[2025-06-10 12:49:01.471]  INFO 21776 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[2025-06-10 12:49:01.471]  INFO 21776 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 212 ms
+[2025-06-10 12:49:01.515]  WARN 21776 --- [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerConfig' defined in file [C:\dev\git-workspace\springProject\bin\main\kr\co\green\global\config\SwaggerConfig.class]: Failed to instantiate [kr.co.green.global.config.SwaggerConfig$$SpringCGLIB$$0]: Constructor threw exception
+[2025-06-10 12:49:01.516]  INFO 21776 --- [  restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+[2025-06-10 12:49:01.520]  INFO 21776 --- [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2025-06-10 12:49:01.522] ERROR 21776 --- [  restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerConfig' defined in file [C:\dev\git-workspace\springProject\bin\main\kr\co\green\global\config\SwaggerConfig.class]: Failed to instantiate [kr.co.green.global.config.SwaggerConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.4.4.jar:3.4.4]
+	at kr.co.green.SpringProjectApplication.main(SpringProjectApplication.java:15) [main/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.4.4.jar:3.4.4]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [kr.co.green.global.config.SwaggerConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 24 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	OpenAPIDefinition cannot be resolved to a type
+	SecurityScheme cannot be resolved to a type
+	SecurityScheme cannot be resolved to a type
+	SecurityScheme cannot be resolved to a variable
+	SecurityScheme cannot be resolved to a variable
+	SecurityRequirement cannot be resolved to a type
+	SecurityRequirement cannot be resolved to a type
+	Arrays cannot be resolved
+
+	at kr.co.green.global.config.SwaggerConfig.<init>(SwaggerConfig.java:9) ~[main/:?]
+	at kr.co.green.global.config.SwaggerConfig$$SpringCGLIB$$0.<init>(<generated>) ~[main/:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 24 more
+
+[2025-06-10 12:49:09.170]  INFO 21776 --- [  restartedMain] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 시작중입니다.
+[2025-06-10 12:49:09.218]  INFO 21776 --- [  restartedMain] k.c.g.SpringProjectApplication           : Starting SpringProjectApplication using Java 17.0.12 with PID 21776 (C:\dev\git-workspace\springProject\bin\main started by GR in C:\dev\git-workspace\springProject)
+[2025-06-10 12:49:09.218]  INFO 21776 --- [  restartedMain] k.c.g.SpringProjectApplication           : No active profile set, falling back to 1 default profile: "default"
+[2025-06-10 12:49:09.418]  INFO 21776 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 80 (http)
+[2025-06-10 12:49:09.418]  INFO 21776 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-80"]
+[2025-06-10 12:49:09.419]  INFO 21776 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[2025-06-10 12:49:09.419]  INFO 21776 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.39]
+[2025-06-10 12:49:09.430]  INFO 21776 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[2025-06-10 12:49:09.430]  INFO 21776 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 210 ms
+[2025-06-10 12:49:09.486]  WARN 21776 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 27e2759c-0c3c-41b5-9f7c-627b9eb2fc9f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-06-10 12:49:09.486]  INFO 21776 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-06-10 12:49:09.494]  WARN 21776 --- [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAPI' defined in class path resource [kr/co/green/global/config/SwaggerConfig.class]: Failed to instantiate [io.swagger.v3.oas.models.OpenAPI]: Factory method 'openAPI' threw exception with message: Unresolved compilation problems: 
+	Cannot instantiate the type SecurityScheme
+	Type cannot be resolved or is not a field
+	In cannot be resolved or is not a field
+	The method addList(String) is undefined for the type SecurityRequirement
+	The method addSecuritySchemes(java.lang.String, io.swagger.v3.oas.models.security.SecurityScheme) in the type Components is not applicable for the arguments (java.lang.String, io.swagger.v3.oas.annotations.security.SecurityScheme)
+
+[2025-06-10 12:49:09.494]  INFO 21776 --- [  restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+[2025-06-10 12:49:09.500]  INFO 21776 --- [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2025-06-10 12:49:09.502] ERROR 21776 --- [  restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAPI' defined in class path resource [kr/co/green/global/config/SwaggerConfig.class]: Failed to instantiate [io.swagger.v3.oas.models.OpenAPI]: Factory method 'openAPI' threw exception with message: Unresolved compilation problems: 
+	Cannot instantiate the type SecurityScheme
+	Type cannot be resolved or is not a field
+	In cannot be resolved or is not a field
+	The method addList(String) is undefined for the type SecurityRequirement
+	The method addSecuritySchemes(java.lang.String, io.swagger.v3.oas.models.security.SecurityScheme) in the type Components is not applicable for the arguments (java.lang.String, io.swagger.v3.oas.annotations.security.SecurityScheme)
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.5.jar:6.2.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.4.4.jar:3.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.4.4.jar:3.4.4]
+	at kr.co.green.SpringProjectApplication.main(SpringProjectApplication.java:15) [main/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.4.4.jar:3.4.4]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.swagger.v3.oas.models.OpenAPI]: Factory method 'openAPI' threw exception with message: Unresolved compilation problems: 
+	Cannot instantiate the type SecurityScheme
+	Type cannot be resolved or is not a field
+	In cannot be resolved or is not a field
+	The method addList(String) is undefined for the type SecurityRequirement
+	The method addSecuritySchemes(java.lang.String, io.swagger.v3.oas.models.security.SecurityScheme) in the type Components is not applicable for the arguments (java.lang.String, io.swagger.v3.oas.annotations.security.SecurityScheme)
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 26 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Cannot instantiate the type SecurityScheme
+	Type cannot be resolved or is not a field
+	In cannot be resolved or is not a field
+	The method addList(String) is undefined for the type SecurityRequirement
+	The method addSecuritySchemes(java.lang.String, io.swagger.v3.oas.models.security.SecurityScheme) in the type Components is not applicable for the arguments (java.lang.String, io.swagger.v3.oas.annotations.security.SecurityScheme)
+
+	at kr.co.green.global.config.SwaggerConfig.openAPI(SwaggerConfig.java:23) ~[main/:?]
+	at kr.co.green.global.config.SwaggerConfig$$SpringCGLIB$$0.CGLIB$openAPI$0(<generated>) ~[main/:?]
+	at kr.co.green.global.config.SwaggerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.5.jar:6.2.5]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:370) ~[spring-context-6.2.5.jar:6.2.5]
+	at kr.co.green.global.config.SwaggerConfig$$SpringCGLIB$$0.openAPI(<generated>) ~[main/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.5.jar:6.2.5]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.5.jar:6.2.5]
+	... 26 more
+

@@ -3,11 +3,14 @@ package kr.co.green.board.service.impl;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.web.multipart.MultipartFile;
 
+import kr.co.green.SpringProjectApplication;
 import kr.co.green.board.dto.BoardDTO;
 import kr.co.green.board.dto.FileDTO;
 import kr.co.green.board.dto.PageInfoDTO;
@@ -24,6 +27,8 @@ public class BoardServiceImpl implements BoardService {
 	private final BoardMapper boardMapper;
 	private final FileUpload fileUpload;
 	private final TransactionHandler transactionHandler;
+	private static final Logger LOGGER = LogManager.getLogger(BoardServiceImpl.class);
+
 	
 	@Override
 	public List<BoardDTO> getAllPosts(PageInfoDTO pi, SearchDTO searchDTO) {
@@ -51,10 +56,12 @@ public class BoardServiceImpl implements BoardService {
 					FileDTO fileDTO = new FileDTO();
 					fileDTO.setFbId(boardDTO.getFbId());
 					fileUpload.upload(file, fileDTO);
-					
 					boardMapper.createFile(fileDTO);
+					LOGGER.info("게시글이 DB에 저장되었습니다. sessionId="+sessionId);
+					
 					transactionManager.commit(status);
 				} catch (IOException e) {
+					LOGGER.error("게시글이 DB에 저장되었습니다. sessionId="+sessionId);
 					transactionManager.rollback(status);
 					e.printStackTrace();
 				}
