@@ -1,0 +1,27 @@
+[2025-06-11 09:46:08.603]  INFO 5368 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+[2025-06-11 09:46:08.613]  INFO 5368 --- [     Thread-145] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+[2025-06-11 09:46:08.614]  INFO 5368 --- [tomcat-shutdown] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-80"]
+[2025-06-11 09:46:08.683]  INFO 5368 --- [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+[2025-06-11 09:46:08.684]  INFO 5368 --- [     Thread-145] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-80"]
+[2025-06-11 09:46:08.726]  INFO 5368 --- [  restartedMain] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 시작중입니다.
+[2025-06-11 09:46:08.765]  INFO 5368 --- [  restartedMain] k.c.g.SpringProjectApplication           : Starting SpringProjectApplication using Java 17.0.12 with PID 5368 (C:\dev\git-workspace\springProject\bin\main started by GR in C:\dev\git-workspace\springProject)
+[2025-06-11 09:46:08.766]  INFO 5368 --- [  restartedMain] k.c.g.SpringProjectApplication           : No active profile set, falling back to 1 default profile: "default"
+[2025-06-11 09:46:08.997]  INFO 5368 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 80 (http)
+[2025-06-11 09:46:08.998]  INFO 5368 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-80"]
+[2025-06-11 09:46:08.998]  INFO 5368 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[2025-06-11 09:46:08.998]  INFO 5368 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.39]
+[2025-06-11 09:46:09.012]  INFO 5368 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[2025-06-11 09:46:09.012]  INFO 5368 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 245 ms
+[2025-06-11 09:46:09.076]  WARN 5368 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c98bba64-555d-4efa-9a19-00f576ec495c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-06-11 09:46:09.077]  INFO 5368 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-06-11 09:46:09.165]  INFO 5368 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+[2025-06-11 09:46:09.173]  INFO 5368 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-80"]
+[2025-06-11 09:46:09.175]  INFO 5368 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 80 (http) with context path '/'
+[2025-06-11 09:46:09.180]  INFO 5368 --- [  restartedMain] k.c.g.SpringProjectApplication           : Started SpringProjectApplication in 0.447 seconds (process running for 2370.921)
+[2025-06-11 09:46:09.181]  INFO 5368 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+[2025-06-11 09:46:09.181]  INFO 5368 --- [  restartedMain] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 성공적으로 시작되었습니다.

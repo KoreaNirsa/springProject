@@ -1,11 +1,14 @@
-[2025-06-11 10:21:22.226] ERROR 14996 --- [p-nio-80-exec-6] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
-	The constructor MemberVO() is undefined
-] with root cause
+[2025-06-11 09:57:37.018] ERROR 11648 --- [p-nio-80-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): kr.co.green.member.model.mapper.MemberMapper.register] with root cause
 
-java.lang.Error: Unresolved compilation problem: 
-	The constructor MemberVO() is undefined
-
-	at kr.co.green.member.model.vo.MemberVO.fromRegisterReqDTO(MemberVO.java:23) ~[main/:?]
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): kr.co.green.member.model.mapper.MemberMapper.register
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:229) ~[mybatis-3.5.17.jar:3.5.17]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53) ~[mybatis-3.5.17.jar:3.5.17]
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:96) ~[mybatis-3.5.17.jar:3.5.17]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[?:?]
+	at org.apache.ibatis.util.MapUtil.computeIfAbsent(MapUtil.java:36) ~[mybatis-3.5.17.jar:3.5.17]
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:94) ~[mybatis-3.5.17.jar:3.5.17]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86) ~[mybatis-3.5.17.jar:3.5.17]
+	at jdk.proxy3/jdk.proxy3.$Proxy93.register(Unknown Source) ~[?:?]
 	at kr.co.green.member.service.impl.MemberServiceImpl.register(MemberServiceImpl.java:36) ~[main/:?]
 	at kr.co.green.member.controller.MemberController.register(MemberController.java:40) ~[main/:?]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]

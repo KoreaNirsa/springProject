@@ -28,7 +28,6 @@ public class BoardServiceImpl implements BoardService {
 	private final FileUpload fileUpload;
 	private final TransactionHandler transactionHandler;
 	private static final Logger LOGGER = LogManager.getLogger(BoardServiceImpl.class);
-
 	
 	@Override
 	public List<BoardDTO> getAllPosts(PageInfoDTO pi, SearchDTO searchDTO) {

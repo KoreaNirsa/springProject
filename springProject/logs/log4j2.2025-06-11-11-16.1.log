@@ -1,0 +1,33 @@
+[2025-06-11 11:16:13.482]  INFO ${sys:PID} --- [           main] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 시작중입니다.
+[2025-06-11 11:16:13.589]  INFO ${sys:PID} --- [  restartedMain] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 시작중입니다.
+[2025-06-11 11:16:13.820]  INFO 18400 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 8.0.2.Final
+[2025-06-11 11:16:13.855]  INFO 18400 --- [  restartedMain] k.c.g.SpringProjectApplication           : Starting SpringProjectApplication using Java 17.0.12 with PID 18400 (C:\dev\git-workspace\springProject\bin\main started by GR in C:\dev\git-workspace\springProject)
+[2025-06-11 11:16:13.859]  INFO 18400 --- [  restartedMain] k.c.g.SpringProjectApplication           : No active profile set, falling back to 1 default profile: "default"
+[2025-06-11 11:16:13.898]  INFO 18400 --- [  restartedMain] o.s.b.d.r.ChangeableUrls                 : The Class-Path manifest attribute in C:\Users\GR\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\23.7.0.25.01\665f52abef9122ce003b5cfc1d9d44f7302e2cfe\ojdbc11-23.7.0.25.01.jar referenced one or more files that do not exist: file:/C:/Users/GR/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/23.7.0.25.01/665f52abef9122ce003b5cfc1d9d44f7302e2cfe/oraclepki.jar
+[2025-06-11 11:16:13.898]  INFO 18400 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2025-06-11 11:16:13.899]  INFO 18400 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2025-06-11 11:16:14.954]  INFO 18400 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 80 (http)
+[2025-06-11 11:16:14.969]  INFO 18400 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-80"]
+[2025-06-11 11:16:14.970]  INFO 18400 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[2025-06-11 11:16:14.971]  INFO 18400 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.39]
+[2025-06-11 11:16:15.019]  INFO 18400 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[2025-06-11 11:16:15.020]  INFO 18400 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1121 ms
+[2025-06-11 11:16:15.418]  WARN 18400 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a821b9fc-5111-4e44-8f3e-03b6cab6e519
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2025-06-11 11:16:15.423]  INFO 18400 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2025-06-11 11:16:15.854]  INFO 18400 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+[2025-06-11 11:16:15.874]  INFO 18400 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-80"]
+[2025-06-11 11:16:15.897]  INFO 18400 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 80 (http) with context path '/'
+[2025-06-11 11:16:15.917]  INFO 18400 --- [  restartedMain] k.c.g.SpringProjectApplication           : Started SpringProjectApplication in 2.323 seconds (process running for 3.135)
+[2025-06-11 11:16:15.921]  INFO 18400 --- [  restartedMain] k.c.g.SpringProjectApplication           : 스프링 프로젝트가 성공적으로 시작되었습니다.
+[2025-06-11 11:16:18.754]  INFO 18400 --- [p-nio-80-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2025-06-11 11:16:18.754]  INFO 18400 --- [p-nio-80-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+[2025-06-11 11:16:18.756]  INFO 18400 --- [p-nio-80-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+[2025-06-11 11:16:21.512]  INFO 18400 --- [p-nio-80-exec-4] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+[2025-06-11 11:16:21.516]  WARN 18400 --- [p-nio-80-exec-4] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2025-06-11 11:16:21.886]  INFO 18400 --- [p-nio-80-exec-4] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@775f2173
+[2025-06-11 11:16:21.887]  INFO 18400 --- [p-nio-80-exec-4] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.

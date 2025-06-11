@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
-import kr.co.green.member.dto.MemberDTO;
+import kr.co.green.member.dto.request.LoginReqDTO;
+import kr.co.green.member.dto.request.RegisterReqDTO;
+import kr.co.green.member.dto.response.LoginResDTO;
 import kr.co.green.member.service.impl.MemberServiceImpl;
 import lombok.RequiredArgsConstructor;
 
@@ -25,24 +27,26 @@ public class MemberController {
 	
 	@GetMapping("/register/form")
 	public String registerForm(Model model) {
-		model.addAttribute("memberDTO", new MemberDTO());
+		model.addAttribute("registerReqDTO", new RegisterReqDTO());
 		return "member/register";
 	}
 	
 	@PostMapping("/register")
-	public String register(@Valid MemberDTO memberDTO, BindingResult bindingResult, Model model) {
+	public String register(@Valid RegisterReqDTO registerReqDTO, BindingResult bindingResult, Model model) {
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("bindingResult", bindingResult); // 생략 가능
 			return "member/register";
 		}
 		
-		int result = memberService.register(memberDTO);
+		int result = memberService.register(registerReqDTO);
 		return "redirect:/member/login/form";
 	}
 	
 	// 로그인 페이지 이동 ->    /member/login/form
 	@GetMapping("/login/form")
 	public String loginForm() {
+		
+		
 		return "member/login";
 	}
 	
@@ -51,8 +55,8 @@ public class MemberController {
 //	private String name;
 //	private String password;
 	@PostMapping("/login")
-	public String login(MemberDTO memberDTO, HttpSession session) {
-		MemberDTO result = memberService.login(memberDTO);
+	public String login(LoginReqDTO loginReqDTO, HttpSession session) {
+		LoginResDTO result = memberService.login(loginReqDTO);
 		
 		if(result != null) {
 			session.setAttribute("memberId", result.getMemberId());
